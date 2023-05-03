@@ -1,1 +1,1 @@
-# com.company.Factorizer
+# Factorizer
