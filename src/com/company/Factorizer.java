@@ -20,6 +20,10 @@ public class Factorizer {
     private void factorize() {
         // Iterate from 1 to the square root of the number to find all factors.
         for (int i = 1; i <= Math.sqrt(number); i++){
+            //If i is a factor of number, add it to the factors list.
+            if(number % i == 0) {
+                factors.add(i);
+            }
 
         }
     }
