@@ -18,5 +18,9 @@ public class Factorizer {
 
     // Created a private method that calculates the factors of the number.
     private void factorize() {
+        // Iterate from 1 to the square root of the number to find all factors.
+        for (int i = 1; i <= Math.sqrt(number); i++){
+
+        }
     }
 }
