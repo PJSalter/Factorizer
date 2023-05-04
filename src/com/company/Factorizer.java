@@ -23,6 +23,10 @@ public class Factorizer {
             //If i is a factor of number, add it to the factors list.
             if(number % i == 0) {
                 factors.add(i);
+                // If the quotient of number / i is not i, add it to the factors list as well.
+                if(number / i != i){
+                    factors.add(number / i);
+                }
             }
 
         }
