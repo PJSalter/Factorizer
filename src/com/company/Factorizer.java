@@ -31,4 +31,18 @@ public class Factorizer {
 
         }
     }
+    // Creating a public method that returns the number of factors.
+    public int getNumFactors() {
+        return factors.size();
+    }
+    // Creating a public method that checks if the number is perfect.
+    public boolean isPerfect() {
+        int sum = 0;
+        // Iterate through the factors and add them up.
+        for(int factor : factors) {
+            sum += factor;
+        }
+        // If the sum of the factors equals the number,it is then perfect.
+        return sum == number;
+    }
 }
