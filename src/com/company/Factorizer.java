@@ -45,4 +45,20 @@ public class Factorizer {
         // If the sum of the factors equals the number,it is then perfect.
         return sum == number;
     }
+
+    // Creating a public method that checks if number is prime.
+    public boolean isPrime() {
+        // If the number is less than 2, it is not prime.
+        if (number < 2) {
+            return false;
+        }
+        // Iterating from 2 to the square root of the number to check for divisors.
+        for (int i = 2; i <= Math.sqrt(number); i++) {
+            if (number % i == 0) {
+                return false;
+            }
+        }
+        // If no divisors were found, the number is prime.
+        return true;
+    }
 }
