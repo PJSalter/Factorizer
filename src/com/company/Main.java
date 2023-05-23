@@ -8,6 +8,6 @@ public class Main {
         System.out.print("What number would you like to factor? ");
         int number = scanner.nextInt();
         Factorizer factorizer = new Factorizer(number);
-        factorizer.printfactorizationResults();
+        factorizer.printFactorizationResults();
     }
 }
