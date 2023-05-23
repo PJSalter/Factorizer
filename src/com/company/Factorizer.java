@@ -61,4 +61,27 @@ public class Factorizer {
         // If no divisors were found, the number is prime.
         return true;
     }
+
+    // Create a public method that prints out the factorization results
+    public void printFactorizationResults() {
+        System.out.println("The factors of " + number + " are:");
+        // Iterate through the factors list and print out each factor
+        for (int factor : factors) {
+            System.out.print(factor + " ");
+        }
+        System.out.println();
+        System.out.println(number + " has " + getNumFactors() + " factors.");
+        if (isPerfect()) {
+            System.out.println(number + " is a perfect number.");
+        } else {
+            System.out.println(number + " is not a perfect number.");
+        }
+        if (isPrime()) {
+            System.out.println(number + " is a prime number.");
+        } else {
+            System.out.println(number + " is not a prime number.");
+        }
+    }
+
+
 }
